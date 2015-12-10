@@ -4,7 +4,7 @@ Theme URI: http://wordpress.fabulator.cz/navod-na-vytvoreni-vlastni-sablony-ve-w
 Author: Michal Ozogán
 Author URI: http://michalozogan.eu;
 Description: Vytvořeno pro účely tutoriálu o vývoji vlastní šablony.
-Version: 0.1
+Version: 0.1.2
 License: Apache License, Version 2.0
 License URI: http://www.apache.org/licenses/LICENSE-2.0
 Tags: turorial, blank
@@ -115,4 +115,23 @@ a img.aligncenter {
     top: 5px;
     width: auto;
     z-index: 100000; /* Above WP toolbar. */
+}
+
+.main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.content {
+    width: 80%;
+    float: left;
+}
+
+.sidebar {
+    width: 20%;
+    float: right;
+}
+
+.clear {
+    clear: both;
 }

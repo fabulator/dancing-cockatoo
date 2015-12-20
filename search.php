@@ -2,6 +2,9 @@
 
 <div class='main'>
     <div class='content'>
+
+        <h1>Výsledky vyhledávání pro: „<?php echo get_search_query(); ?>“</h1>
+
         <!--  Cyklus, který projde všechny články v loopu  //-->
         <?php while (have_posts()) { ?>
             <!--  Nastavý aktuální článek jako aktivní  //-->

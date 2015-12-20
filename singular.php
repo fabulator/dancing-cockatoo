@@ -7,7 +7,7 @@
             <!--  Nastavý aktuální článek jako aktivní  //-->
             <?php the_post(); ?>
             <article <?php post_class(); ?>>
-                <h2><a href='<?php the_permalink(); ?>'><?php the_title(); ?></a></h2>
+                <h2><?php the_title(); ?></h2>
                 <?php the_content(); ?><br />
                 Kategorie: <?php the_category(', '); ?><br />
                 <?php the_tags('Štítky: '); ?><br />

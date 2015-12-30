@@ -14,6 +14,12 @@
                 Publikováno: <?php the_time(); ?> <?php the_date(); ?>
                 <hr />
             </article>
+
+            <!-- Zavolat komentářovou šablonu pouze v případě, že komentáře jsou povolené nebo už nějaké existují -->
+            <?php if (comments_open() || get_comments_number()) { ?>
+                <?php comments_template(); ?>
+            <?php } ?>
+
         <?php } ?>
     </div>
     <div class='sidebar'>
